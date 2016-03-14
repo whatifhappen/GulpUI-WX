@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>GulpUI-WX by whatifhappen</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>GulpUI-WX</h1>
+        <h2>gulp GUI for webchat commercial</h2>
+        <a href="https://github.com/whatifhappen/gulpUI-WX.github.io" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h3>
+<a id="gulp-ui是什么" class="anchor" href="#gulp-ui%E6%98%AF%E4%BB%80%E4%B9%88" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gulp UI是什么？</h3>
+
+<p>Gulp UI实际上是一套完整的gulp工作流，以nw.js（node-webkit）为基础将gulpfile.js以及所依赖的node_modules封装在一起的一个图形界面。</p>
+
+<h3>
+<a id="为什么要做ui" class="anchor" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%81%9Aui" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>为什么要做UI？</h3>
+
+<p>gulp工作流在实际使用中根据项目需求变得越来越复杂，依赖的node_modules变多，需要使用更多的命令来处理不同的需求，灵活性较低。随着项目文件的增加导致操作时间也增加，使用成本变高。使用UI，可以降低团队成员使用成本，快速上手和开发项目。 </p>
+
+<h3>
+<a id="功能介绍" class="anchor" href="#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>功能介绍</h3>
+
+<h4>
+<a id="一键式开发压缩" class="anchor" href="#%E4%B8%80%E9%94%AE%E5%BC%8F%E5%BC%80%E5%8F%91%E5%8E%8B%E7%BC%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>一键式开发/压缩</h4>
+
+<ol>
+<li>less实时监听编译css</li>
+<li>css前缀自动补全</li>
+<li>格式化html，并自动替换src源码路径为idc发布路径</li>
+<li>压缩图片(png|jpg|gif|svg)</li>
+<li>压缩或格式化js，并自动替换src源码路径为idc发布路径</li>
+<li>同步刷新浏览器browserSync</li>
+</ol>
+
+<h4>
+<a id="编译单一文件或者类型" class="anchor" href="#%E7%BC%96%E8%AF%91%E5%8D%95%E4%B8%80%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E7%B1%BB%E5%9E%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编译单一文件或者类型</h4>
+
+<p>切换菜单到特定的编译方式时可以编译单一文件或者文件夹下同类型到idc/dist目录</p>
+
+<h3>
+<a id="工作流目录结构" class="anchor" href="#%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>工作流目录结构：</h3>
+
+<ul>
+<li><strong>主目录结构</strong></li>
+</ul>
+
+<pre><code>  ├── 主目录 
+  │ ├── src //源码路径 
+  │ ├── dev //开发阶段编译路径 
+  │ └── idc //压缩编译的发布目录
+</code></pre>
+
+<p>​</p>
+
+<ul>
+<li><strong>src目录结构</strong></li>
+</ul>
+
+<pre><code>  ├── src  
+  │ ├── img   
+  │ ├── css //less 源码目录  
+  │ │ ├── import.something.less // 引用库，不会被编译  
+  │ │ └── style.less // 编译成 style.css  
+  │ ├── libs // 依赖库  
+  │ ├── js  
+  │ └── index.html
+</code></pre>
+
+<p>​</p>
+
+<h3>
+<a id="安装说明" class="anchor" href="#%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>安装说明：</h3>
+
+<p><strong>A. windows</strong> </p>
+
+<ol>
+<li>使用exe安装包执行安装（请使用英文路径，不能带空格或特殊字符，如C:\gulp）；</li>
+<li>请耐心等待安装完毕（ <strong>请勿手动关闭cmd窗口</strong>。因gulp-imagemin文件名过长只能通过解压缩处理）</li>
+<li>点击nw.exe或者桌面图标即可开始使用。</li>
+</ol>
+
+<p><strong>B. mac</strong></p>
+
+<ol>
+<li><p>使用终端工具，安装全局gulp：  
+ <code>npm i -g gulp@3.9.1</code></p></li>
+<li>
+<p>直接打开gulp app使用</p>
+
+<p>​</p>
+</li>
+</ol>
+
+<h3>
+<a id="使用说明" class="anchor" href="#%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>使用说明：</h3>
+
+<ul>
+<li><p><strong>拖放</strong>或者 <strong>点击</strong>选择src源码文件夹，源码路径以src文件夹为起点开始操作；（若无src目录，则会创建一个dist目录存放编译后的文件）</p></li>
+<li><p>当点击 <strong>开发</strong>，会启动 <a href="http://www.browsersync.io/">browserSync</a>（前端测试刷新工具，更多介绍查看km:  <a href="http://www.browsersync.io/">http://www.browsersync.io/</a>）静态服务器。监听less文件，并自动编译，补全前缀到dev目录；编译src下所有less，压缩css，补全前缀，并替换src路径为idc;监听html文件，自动替换路径地址为dev目录;监听图片文件，修改时自动刷新浏览器;</p></li>
+<li><p>当点击 <strong>压缩</strong>编译src下所有html，并替换src路径为idc;编译src下所有less，压缩css，补全前缀，并替换src路径为idc;编译src下所有js，可选压缩或不压缩js，并替换src路径为idc;压缩src下所有图片，包括png,gif,jpeg,svg;</p></li>
+</ul>
+
+<h3>
+<a id="期待你的反馈和建议" class="anchor" href="#%E6%9C%9F%E5%BE%85%E4%BD%A0%E7%9A%84%E5%8F%8D%E9%A6%88%E5%92%8C%E5%BB%BA%E8%AE%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>期待你的反馈和建议</h3>
+
+<p><a href="rongteng@tencent.com">e-mail</a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/whatifhappen/gulpUI-WX.github.io/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/whatifhappen/gulpUI-WX.github.io/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/whatifhappen/gulpUI-WX.github.io"></a> is maintained by <a href="https://github.com/whatifhappen">whatifhappen</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
