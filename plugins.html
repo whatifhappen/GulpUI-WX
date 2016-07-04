@@ -1,0 +1,512 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>gulp-plugins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="javascript/vendor/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head><body>
+  <div class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://fe.oa.com/gulp/"><span>Gulp Workflow</span><br></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/gulp">Home</a>
+          </li>
+          <li  class="active">
+            <a href="/gulp/plugins.html">Plugins</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="icon-align-center">插件列表</h1></div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">Autoprefixer</h1>
+          <p><a href="https://github.com/postcss/postcss">PostCSS</a>插件之一，用于解析CSS，并根据Can I Use的CSS规范补全前缀。Google推荐使用，Twitter和淘宝已经应用在项目中。</p>
+          <h3>编写标准化CSS</h3>
+          <p>
+            只需要根据W3C规范写CSS，Autoprefixer会自动补全旧浏览器的代码。
+            <br>
+          </p>
+        </div><div class="col-md-12">
+          <pre>  <code>
+  //默认使用webkit兼容（Android 2.3, ios 6.0), 可更换成IE兼容
+    a {
+        display: flex;
+    }
+  </code>
+</pre>
+          <pre>  <code>
+    a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+    }
+  </code>
+</pre>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="text-primary">Browsersync</h1>
+          <h3>省时的浏览器同步测试工具</h3>
+          <p></p>
+          <p>Browsersync能让浏览器实时、快速响应您的文件更改（html、js、css、sass、less等）并自动刷新页面。更重要的是 Browsersync可以同时在PC、平板、手机等设备下进项调试。您可以想象一下：“假设您的桌子上有pc、ipad、iphone、android等设备，同时打开了您需要调试的页面，当您使用browsersync后，您的任何一次代码保存，以上的设备都会同时显示您的改动”。无论您是前端还是后端工程师，使用它将提高您30%的工作效率。（节选自Browsersync中文网)）</p>
+          <p></p>
+
+
+        </div>
+        <div class="col-md-4"><img src="images\sync-demo.gif" class="img-responsive img-thumbnail"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">babel</h1>
+          <p></p>
+          <p>Babel是一个转换编译器，它能将ES6转换成可以在浏览器中运行的向后兼容的js代码
+          </p>
+          <p></p>
+        </div>
+        <div class="col-md-12">
+          <pre>  <code>// ES6
+// Expression bodies
+var odds = evens.map(v =&gt; v + 1);
+var nums = evens.map((v, i) =&gt; v + i);
+
+// Statement bodies
+nums.forEach(v =&gt; {
+  if (v % 5 === 0)
+    fives.push(v);
+});</code>
+</pre>
+          <pre>  <code>//babel编译后
+// Expression bodies
+var odds = evens.map(function (v) {
+  return v + 1;
+});
+var nums = evens.map(function (v, i) {
+  return v + i;
+});
+
+// Statement bodies
+nums.forEach(function (v) {
+  if (v % 5 === 0) fives.push(v);
+});</code>
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">csswring</h1>
+          <p></p>
+          <p><a href="#">PostCSS</a>插件之一, 用于压缩CSS代码
+          </p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-cached</h1>
+          <p></p>
+          <p><a href="https://www.npmjs.com/package/gulp-cached">gulp-cached</a>一个简单的缓存文件机制。
+          </p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-concat</h1>
+          <p></p>
+          <p>g<a href="https://www.npmjs.com/package/gulp-concat">ulp-concat</a>合并文件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">del</h1>
+          <p></p>
+          <p>删除文件/目录，用于编译目录的时候清理</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-file-include</h1>
+          <p></p>
+          <p>引用文件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-if</h1>
+          <p></p>
+          <p>判断</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-ignore</h1>
+          <p></p>
+          <p>
+            <br>忽略指定文件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-imagemin</h1>
+          <p></p>
+          <p>压缩图片</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">imagemin-mozjpeg</h1>
+          <p></p>
+          <p>mozjpeg插件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">imagemin-pngquant
+
+</h1>
+          <p></p>
+          <p>pngquant插件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">imagemin-svgo
+
+</h1>
+          <p></p>
+          <p>svgo插件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-jshint
+
+</h1>
+          <p></p>
+          <p>jshint代码检测插件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-plumber
+
+
+
+</h1>
+          <p></p>
+          <p>发生错误不会中断流程</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-prettify
+
+
+
+</h1>
+          <p></p>
+          <p>代码格式化插件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-postcss
+
+
+
+</h1>
+          <p></p>
+          <p>PostCSS处理css多个流程，但只编译css一次</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">run-sequence
+
+
+
+</h1><h1 class="text-primary">run-sequence
+
+
+
+</h1>
+          <p></p>
+          <p>用于运行一系列排序任务</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-rename
+
+
+
+</h1>
+          <p></p>
+          <p>用于重命名文件，可用作修改根目录位置</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-replace
+
+
+
+</h1>
+          <p></p>
+          <p>正则匹配替换插件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">stream-combiner2
+
+
+
+</h1>
+          <p></p>
+          <p>运行多个任务时，合并错误提示，延后输出</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-sourcemaps
+
+
+
+</h1>
+          <p></p>
+          <p>用于解析编译后的文件并提供源码文件对应的地址</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-size
+
+
+
+</h1>
+          <p></p>
+          <p>输出文件大小</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp.spritesmith
+
+
+
+</h1>
+          <p></p>
+          <p>雪碧图插件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-uglify
+
+
+
+</h1>
+          <p></p>
+          <p>js代码压缩插件</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-using
+
+
+
+</h1>
+          <p></p>
+          <p>插件依赖</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-util
+
+
+
+</h1>
+          <p></p>
+          <p>用于解析编译后的文件并提供源码文件对应的地址</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">gulp-watch
+
+
+
+</h1>
+          <p></p>
+          <p>文件监听插件（增删改），不主动中断.</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body></html>
