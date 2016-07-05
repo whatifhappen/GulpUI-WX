@@ -1,315 +1,325 @@
-<html><head>
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Gulp一键式工作流">
-        <meta name="keywords" content="Gulp,ui,workflow">
-        <meta name="author" content="">
-        <meta name="googlebot" content="index,follow">
-        <!-- Title -->
-        <title>feWorkflow</title>
-        <!-- Templates core CSS -->
-        <link href="stylesheets/application.css" rel="stylesheet">
-        <!-- Favicons -->
-        <link href="images/gulp.png" rel="shortcut icon">
-        <link href="imagesgulp.png" rel="apple-touch-icon">
-        <link href="images/gulp.png" rel="apple-touch-icon" sizes="72x72">
-        <link href="images/gulp.png" rel="apple-touch-icon" sizes="114x114">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gulp一键式工作流">
+    <meta name="keywords" content="Gulp,ui,workflow">
+    <meta name="author" content="">
+    <meta name="googlebot" content="index,follow">
+    <!-- Title -->
+    <title>feWorkflow</title>
+    <!-- Templates core CSS -->
+    <link href="stylesheets/application.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="images/gulp.png" rel="shortcut icon">
+    <link href="imagesgulp.png" rel="apple-touch-icon">
+    <link href="images/gulp.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/gulp.png" rel="apple-touch-icon" sizes="114x114">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media
         queries -->
-        <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-        <!-- Modernizr Scripts -->
-        <script src="javascript/vendor/modernizr-2.7.1.min.js"></script>
-    </head><body class="index" id="to-top">
-        <!-- Side nav -->
-        <nav class="side-nav" role="navigation"></nav>
-        <!-- /.side-nav -->
-        <!-- Jumbotron -->
-        <header class="jumbotron" role="banner">
-            <div class="section section-fill-height section-opaque-dark">
-                <div class="background-video-holder">
-                    <video class="background-video" autoplay="autoplay" loop="loop" src="videos/gulp-workflow-2-high.mp4"></video>
-                </div>
-                <div class="col-lg-12">
-                    <!-- Logo -->
-                    <figure class="text-center">
-                        <a href="./index.html">
+    <!-- Modernizr Scripts -->
+    <script src="javascript/vendor/modernizr-2.7.1.min.js"></script>
+</head>
+
+<body class="index" id="to-top">
+    <!-- Side nav -->
+    <nav class="side-nav" role="navigation"></nav>
+    <!-- /.side-nav -->
+    <!-- Jumbotron -->
+    <header class="jumbotron" role="banner">
+        <div class="section section-fill-height section-opaque-dark">
+            <div class="background-video-holder">
+            <video class="background-video" autoplay="autoplay" loop="loop" src="videos/gulp-workflow-2-high.mp4" poster="images/gulp-workflow-demo.jpg">
+                  抱歉，您的浏览器不支持内嵌视频.
+                </video>
+            </div>
+            <div class="col-lg-12">
+                <!-- Logo -->
+                <figure class="text-center">
+                    <a href="./index.html">
                         <img class="img-logo" src="images/gulp.png" alt="gulp">
                     </a>
+                </figure>
+                <!-- /.text-center -->
+                <!-- Title -->
+                <h1>feWorkflow</h1>
+                <p>一键式Gulp工作流
+                    <br>
+                </p>
+                <!-- Sub title -->
+                <div class="btn-group"></div>
+                <div class="btn-group"><a href="sources\feWorkflow-v0.1.2.exe.zip" class="btn btn-primary">windows版</a><a href="sources\feWorkflow-wx-v0.1.2.dmg" class="btn btn-primary">mac版</a><a href="https://github.com/whatifhappen/feWorkflow" class="btn btn-primary">Github</a></div>
+                <p></p>
+                <!-- /.btn-app-store -->
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-3 text-center"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.jumbotron -->
+    <!-- Services -->
+    <section class="services-section" id="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-services">
+                    <!-- Icons -->
+                    <figure>
+                        <img class="img-services" src="images/icons/flag.png" alt="">
                     </figure>
-                    <!-- /.text-center -->
                     <!-- Title -->
-                    <h1>feWorkflow</h1>
-                    <p>一键式Gulp工作流
+                    <h4>feWorkflow是什么？</h4>
+                    <!-- Description -->
+                    <p class="text-left">feWorkflow实际上是一套完整的gulp工作流，以electron为基础将gulpfile.js以及所依赖的node_modules封装在一起的一个图形界面。</p>
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-6 col-services">
+                    <!-- Icons -->
+                    <figure>
+                        <img class="img-services" src="images/icons/search.png" alt="">
+                    </figure>
+                    <!-- Title -->
+                    <h4>为什么要做UI？</h4>
+                    <!-- Description -->
+                    <p class="text-left">gulp工作流在实际使用中根据项目需求变得越来越复杂，依赖的node_modules变多，需要使用更多的命令来处理不同的需求，灵活性较低。随着项目文件的增加导致操作时间也增加，使用成本变高。使用UI，可以降低团队成员使用成本，快速上手和开发项目。
                         <br>
                     </p>
-                    <!-- Sub title -->
-                    <div class="btn-group">
-                        <a href="sources\feWorkflow-v0.1.2.exe.zip" class="btn btn-primary">windows版</a>
-                        <a href="sources\feWorkflow-wx-v0.1.2.dmg" class="btn btn-primary">mac版</a>
-                    </div>
-                    <!-- /.btn-app-store -->
+                </div>
+                <!-- /.col-md-4 -->
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.services-section -->
+    <!-- Features -->
+    <section class="features-section" id="section-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><img src="images\feWorkflow.png" class="img-responsive  col-features features-content"></div>
+                <!-- /.col-md-5 -->
+                <div class="col-md-6 col-features features-content">
+                    <!-- Title -->
+                    <h3 id="title-1">一键式开发/压缩</h3>
+                    <ol>
+                        <li>less实时监听编译css</li>
+                        <li>css前缀自动补全</li>
+                        <li>格式化html，并自动替换src源码路径为idc发布路径</li>
+                        <li>压缩图片(png|jpg|gif|svg)</li>
+                        <li>压缩或格式化js，并自动替换src源码路径为idc发布路径</li>
+                        <li>同步刷新浏览器browserSync</li>
+                    </ol>
+                    <!-- Description -->
+                    <a class="btn btn-danger btn-sm" href="plugins.html">了解更多插件</a>
+                </div>
+                <!-- /.col-md-7 -->
+            </div>
+            <!-- /.row -->
+            <div class="row media-screen-800">
+                <div class="col-md-6 col-features features-content">
+                    <!-- Title -->
+                    <h3 id="title-2">自定义设置</h3>
+                    <!-- Description -->
+                    <p>定制所需，随时扩展</p>
+                    <!-- <a class="btn btn-danger btn-sm">了解更多</a> -->
+                </div>
+                <div class="col-md-6"><img src="images\feWorkflow-setting.png" class="img-responsive   col-features features-content"></div>
+                <!-- /.col-md-7 -->
+                <!-- /.col-md-5 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-5 col-features text-center">
+                    <!-- Images showcase -->
+                    <figure></figure>
+                    <figure></figure>
+                </div>
+                <!-- /.col-md-5 -->
+                <!-- /.col-md-7 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="services-section" id="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>工作流目录结构：</h3>
                 </div>
             </div>
-        </header>
-        <!-- /.jumbotron -->
-        <!-- Services -->
-        <section class="services-section" id="section-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-services">
-                        <!-- Icons -->
-                        <figure>
-                            <img class="img-services" src="images/icons/flag.png" alt="">
-                        </figure>
-                        <!-- Title -->
-                        <h4>feWorkflow是什么？</h4>
-                        <!-- Description -->
-                        <p class="text-left">Gulp UI实际上是一套完整的gulp工作流，以electron为基础将gulpfile.js以及所依赖的node_modules封装在一起的一个图形界面。</p>
-                    </div>
-                    <!-- /.col-md-4 -->
-                    <div class="col-md-6 col-services">
-                        <!-- Icons -->
-                        <figure>
-                            <img class="img-services" src="images/icons/search.png" alt="">
-                        </figure>
-                        <!-- Title -->
-                        <h4>为什么要做UI？</h4>
-                        <!-- Description -->
-                        <p class="text-left">gulp工作流在实际使用中根据项目需求变得越来越复杂，依赖的node_modules变多，需要使用更多的命令来处理不同的需求，灵活性较低。随着项目文件的增加导致操作时间也增加，使用成本变高。使用UI，可以降低团队成员使用成本，快速上手和开发项目。
+            <div class="row">
+                <div class="col-md-6 col-services">
+                    <!-- Icons -->
+                    <!-- Title -->
+                    <h4>主目录结构</h4>
+                    <!-- Description -->
+                    <p class="text-left">├── 主目录
+                        <br>│ ├── src //源码路径
+                        <br>│ ├── dev //开发阶段编译路径
+                        <br>│ └── idc //压缩编译的发布目录</p>
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-6 col-services">
+                    <!-- Icons -->
+                    <!-- Title -->
+                    <h4>src目录结构</h4>
+                    <!-- Description -->
+                    <p class="text-left">├── src&nbsp;
+                        <br>│ ├──&nbsp;img &nbsp;
+                        <br>│ ├── css //less 源码目录&nbsp;
+                        <br>│ │ ├── import.something.less // 引用库，不会被编译&nbsp;
+                        <br>│ │&nbsp;└── style.less // 编译成 style.css&nbsp;
+                        <br>│ ├── libs // 依赖库&nbsp;
+                        <br>│ ├──&nbsp;js&nbsp;
+                        <br>│ └── index.html</p>
+                </div>
+                <!-- /.col-md-4 -->
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="features-section" id="section-2">
+        <div class="container">
+            <h3 class="text-center">安装说明：</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="text-center">windows&nbsp;</h4>
+                    <ol class="text-left">
+                        <li>使用exe安装包执行安装（请使用英文路径，不能带空格或特殊字符，如C:\gulp）；</li>
+                        <li>请耐心等待安装完毕（
+                            <b>请勿手动关闭cmd窗口</b>。因gulp-imagemin文件名过长只能通过解压缩处理）</li>
+                        <li>点击feWorkflow.exe或者桌面图标即可开始使用。</li>
+                    </ol>
+                </div>
+                <div class="col-md-6  col-services">
+                    <h4 class="text-center">mac</h4>
+                    <ol class="text-left">
+                        <li>使用终端工具，安装全局gulp：&nbsp;
+                            <br>npm i -g gulp@3.9.0
                             <br>
-                        </p>
-                    </div>
-                    <!-- /.col-md-4 -->
-                    <!-- /.col-md-4 -->
+                        </li>
+                        <li>直接打开feWorkflow app使用</li>
+                    </ol>
                 </div>
-                <!-- /.row -->
             </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.services-section -->
-        <!-- Features -->
-        <section class="features-section" id="section-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6"><img src="images\feWorkflow.png" class="img-responsive  col-features features-content"></div>
-                    <!-- /.col-md-5 -->
-                    <div class="col-md-6 col-features features-content">
-                        <!-- Title -->
-                        <h3 id="title-1">一键式开发/压缩</h3>
-                        <ol>
-                            <li>less实时监听编译css</li>
-                            <li>css前缀自动补全</li>
-                            <li>格式化html，并自动替换src源码路径为idc发布路径</li>
-                            <li>压缩图片(png|jpg|gif|svg)</li>
-                            <li>压缩或格式化js，并自动替换src源码路径为idc发布路径</li>
-                            <li>同步刷新浏览器browserSync</li>
-                        </ol>
-                        <!-- Description -->
-                        <a class="btn btn-danger btn-sm" href="plugins.html">了解更多插件</a>
-                    </div>
-                    <!-- /.col-md-7 -->
-                </div>
-                <!-- /.row -->
-                <div class="row media-screen-800">
-                    <div class="col-md-6 col-features features-content">
-                        <!-- Title -->
-                        <h3 id="title-2">自定义设置</h3>
-                        <!-- Description -->
-                        <p>定制所需，随时扩展</p>
-                        <!-- <a class="btn btn-danger btn-sm">了解更多</a> -->
-                    </div><div class="col-md-6"><img src="images\feWorkflow-setting.png" class="img-responsive   col-features features-content"></div>
-                    <!-- /.col-md-7 -->
-                    
-                    <!-- /.col-md-5 -->
-                </div>
-                <!-- /.row -->
-                <div class="row">
-                    <div class="col-md-5 col-features text-center">
-                        <!-- Images showcase -->
-                        <figure></figure>
-                        <figure></figure>
-                    </div>
-                    <!-- /.col-md-5 -->
-                    <!-- /.col-md-7 -->
-                </div>
-                <!-- /.row -->
+            <div class="row">
             </div>
-            <!-- /.container -->
-        </section>
-        <section class="services-section" id="section-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>工作流目录结构：</h3>
-                    </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="services-section" id="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <h3 class="text-center">使用说明：</h3>
+                    <ol class="text-left">
+                        <li>
+                            <b>拖放</b>或者
+                            <b>点击</b>选择src源码文件夹，源码路径以src文件夹为起点开始操作；（若无src目录，则会创建一个dist目录存放编译后的文件）</li>
+                        <li>当点击
+                            <b>开发</b>，会启动
+                            <a href="http://www.browsersync.io/">browserSync</a>（前端测试刷新工具，更多介绍查看:&nbsp;
+                            <a href="http://www.browsersync.io/">http://www.browsersync.io/</a>）静态服务器。
+                            <ul class="list-group">
+                                <li class="list-group-item">监听less文件，并自动编译，补全前缀到dev目录；</li>
+                                <li class="list-group-item">编译src下所有less，压缩css，补全前缀，并替换src路径为idc;</li>
+                                <li class="list-group-item">监听html文件，自动替换路径地址为dev目录;</li>
+                                <li class="list-group-item">监听图片文件，修改时自动刷新浏览器;</li>
+                            </ul>
+                        </li>
+                        <li>当点击
+                            <b>压缩</b>
+                            <ul class="list-group">
+                                <li class="list-group-item">编译src下所有html，并替换src路径为idc;</li>
+                                <li class="list-group-item">编译src下所有less，压缩css，补全前缀，并替换src路径为idc;</li>
+                                <li class="list-group-item">编译src下所有js，可选压缩或不压缩js，并替换src路径为idc;</li>
+                                <li class="list-group-item">压缩src下所有图片，包括png,gif,jpeg,svg;</li>
+                            </ul>
+                        </li>
+                    </ol>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-services">
-                        <!-- Icons -->
-                        <!-- Title -->
-                        <h4>主目录结构</h4>
-                        <!-- Description -->
-                        <p class="text-left">├── 主目录
-                            <br>│ ├── src //源码路径
-                            <br>│ ├── dev //开发阶段编译路径
-                            <br>│ └── idc //压缩编译的发布目录</p>
-                    </div>
-                    <!-- /.col-md-4 -->
-                    <div class="col-md-6 col-services">
-                        <!-- Icons -->
-                        <!-- Title -->
-                        <h4>src目录结构</h4>
-                        <!-- Description -->
-                        <p class="text-left">├── src&nbsp;
-                            <br>│ ├──&nbsp;img &nbsp;
-                            <br>│ ├── css //less 源码目录&nbsp;
-                            <br>│ │ ├── import.something.less // 引用库，不会被编译&nbsp;
-                            <br>│ │&nbsp;└── style.less // 编译成 style.css&nbsp;
-                            <br>│ ├── libs // 依赖库&nbsp;
-                            <br>│ ├──&nbsp;js&nbsp;
-                            <br>│ └── index.html</p>
-                    </div>
-                    <!-- /.col-md-4 -->
-                    <!-- /.col-md-4 -->
-                </div>
-                <!-- /.row -->
             </div>
-            <!-- /.container -->
-        </section>
-        <section class="features-section" id="section-2">
-            <div class="container">
-                <h3>安装说明：</h3>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-12">
-                            <h4>1. windows&nbsp;</h4>
-                            <ol>
-                                <li>使用exe安装包执行安装（请使用英文路径，不能带空格或特殊字符，如C:\gulp）；</li>
-                                <li>请耐心等待安装完毕（
-                                    <b>请勿手动关闭cmd窗口</b>。因gulp-imagemin文件名过长只能通过解压缩处理）</li>
-                                <li>点击feWorkflow.exe或者桌面图标即可开始使用。</li>
-                            </ol>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.features-section -->
+    <!-- Subscribe -->
+    <section class="subscribe-section" id="section-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Title -->
+                    <h2>期待你的反馈和建议</h2>
+                    <!-- Subscribe form -->
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <form action="mailto:rongteng@tencent.com" role="form">
+                                <!-- Input -->
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-success" value="e-mail">
+                                </div>
+                                <!-- /.form-group -->
+                            </form>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>2. mac</h4>
-                        <ol>
-                            <li>使用终端工具，安装全局gulp：&nbsp;
-                                <br>npm i -g gulp@3.9.0
-                                <br>
-                            </li>
-                            <li>直接打开feWorkflow app使用</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <!-- /.container -->
-        </section>
-        <section class="services-section" id="section-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-left">
-                        <h3 class="text-left">使用说明：</h3>
-                        <ol class="text-left">
-                            <li>
-                                <b>拖放</b>或者
-                                <b>点击</b>选择src源码文件夹，源码路径以src文件夹为起点开始操作；（若无src目录，则会创建一个dist目录存放编译后的文件）</li>
-                            <li>当点击
-                                <b>开发</b>，会启动
-                                <a href="http://www.browsersync.io/">browserSync</a>（前端测试刷新工具，更多介绍查看:&nbsp;
-                                <a href="http://www.browsersync.io/">http://www.browsersync.io/</a>）静态服务器。
-                                <ul class="list-group">
-                                    <li class="list-group-item">监听less文件，并自动编译，补全前缀到dev目录；</li>
-                                    <li class="list-group-item">编译src下所有less，压缩css，补全前缀，并替换src路径为idc;</li>
-                                    <li class="list-group-item">监听html文件，自动替换路径地址为dev目录;</li>
-                                    <li class="list-group-item">监听图片文件，修改时自动刷新浏览器;</li>
-                                </ul>
-                            </li>
-                            <li>当点击
-                                <b>压缩</b>
-                                <ul class="list-group">
-                                    <li class="list-group-item">编译src下所有html，并替换src路径为idc;</li>
-                                    <li class="list-group-item">编译src下所有less，压缩css，补全前缀，并替换src路径为idc;</li>
-                                    <li class="list-group-item">编译src下所有js，可选压缩或不压缩js，并替换src路径为idc;</li>
-                                    <li class="list-group-item">压缩src下所有图片，包括png,gif,jpeg,svg;</li>
-                                </ul>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.features-section -->
-        <!-- Subscribe -->
-        <section class="subscribe-section" id="section-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <!-- Title -->
-                        <h2>期待你的反馈和建议</h2>
-                        <!-- Subscribe form -->
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4">
-                                <form action="mailto:rongteng@tencent.com" role="form">
-                                    <!-- Input -->
-                                    <div class="form-group">
-                                        <input type="submit" class="btn btn-success" value="e-mail">
-                                    </div>
-                                    <!-- /.form-group -->
-                                </form>
-                            </div>
-                            <!-- <div class="col-md-2">
+                        <!-- <div class="col-md-2">
 
                          <a href="RTXLite.HotLink://UIN=69023;31501" class="btn btn-success">RTX</a>
                        </div> -->
-                            <!-- /.col-md-6 -->
-                        </div>
-                        <p class="col-md-12">:)</p>
-                        <!-- /.row -->
+                        <!-- /.col-md-6 -->
                     </div>
-                    <!-- /.col-md-12 -->
+                    <p class="col-md-12">:)</p>
+                    <!-- /.row -->
                 </div>
-                <!-- /.row -->
+                <!-- /.col-md-12 -->
             </div>
-            <!-- /.container -->
-        </section>
-        <footer class="footer-section" role="contentinfo">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-footer">
-                        <!-- Footer 1 -->
-                        <section>
-                            <p class="text-center">Made with
-                                <i class="fa fa-heart"></i>&nbsp;by whatifhappen
-                                <br>Powered by Aryandhani's awesome&nbsp;Guri theme</p>
-                        </section>
-                        <!-- AddThis Button -->
-                    </div>
-                    <!-- /.col-md-4 -->
-                    <!-- /.col-md-4 -->
-                    <!-- /.col-md-4 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </footer>
-        <!-- /.subscribe-section -->
-        <!-- Footer -->
-        <!-- /.footer-section -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="javascript/vendor/jquery-2.1.0.min.js"></script>
-        <script src="javascript/bootstrap.min.js"></script>
-        <script src="javascript/assets/application.js"></script>
-        <div class="modal fade">
-            <div class="modal-dialog"></div>
+            <!-- /.row -->
         </div>
-    
+        <!-- /.container -->
+    </section>
+    <footer class="footer-section" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-footer">
+                    <!-- Footer 1 -->
+                    <section>
+                        <p class="text-center">Made with
+                            <i class="fa fa-heart"></i>&nbsp;by whatifhappen
+                            <br>Powered by Aryandhani's awesome&nbsp;Guri theme</p>
+                    </section>
+                    <!-- AddThis Button -->
+                </div>
+                <!-- /.col-md-4 -->
+                <!-- /.col-md-4 -->
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.subscribe-section -->
+    <!-- Footer -->
+    <!-- /.footer-section -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="javascript/vendor/jquery-2.1.0.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/assets/application.js"></script>
+    <div class="modal fade">
+        <div class="modal-dialog"></div>
+    </div>
+</body>
 
-</body></html>
+</html>
